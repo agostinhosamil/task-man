@@ -1,6 +1,12 @@
+import { Button } from '@chakra-ui/react'
 
 export default function Home() {
   return (
-    <h1>Hello, World :) ..!</h1>
+    <div>
+    	<h1>Hello, World :) ..!</h1>
+  		<Button>
+  			Save Datas
+  		</Button>
+    </div>
   )
 }
