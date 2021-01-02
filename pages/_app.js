@@ -1,6 +1,6 @@
 import Head from 'next/head'
-import { ChakraProvider, CSSReset } from "@chakra-ui/react"
 import { currentTheme as theme } from '~/config/theme'
+import { ChakraProvider } from "@chakra-ui/react"
 import { GlobalStyles, Container } from '@styles'
 
 function App ({ Component, pageProps }) {
@@ -9,10 +9,9 @@ function App ({ Component, pageProps }) {
      <Head>
        <link rel="icon" href="/favicon.ico" />
      </Head>
-     <CSSReset />
      <GlobalStyles />
      <Container>
-       <Component {...pageProps} />
+       <Component { ...pageProps } />
      </Container> 
     </ChakraProvider>
   )
